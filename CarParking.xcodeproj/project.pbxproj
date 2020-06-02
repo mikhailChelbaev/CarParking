@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		74DA3CB224868B2400365703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA3CB124868B2400365703 /* AppDelegate.swift */; };
 		74DA3CB424868B2400365703 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA3CB324868B2400365703 /* SceneDelegate.swift */; };
-		74DA3CB624868B2400365703 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA3CB524868B2400365703 /* ViewController.swift */; };
+		74DA3CB624868B2400365703 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA3CB524868B2400365703 /* MapViewController.swift */; };
 		74DA3CB924868B2400365703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DA3CB724868B2400365703 /* Main.storyboard */; };
 		74DA3CBB24868B2800365703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DA3CBA24868B2800365703 /* Assets.xcassets */; };
 		74DA3CBE24868B2800365703 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DA3CBC24868B2800365703 /* LaunchScreen.storyboard */; };
+		74DA3CC6248697DF00365703 /* UserDefaultsEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA3CC5248697DF00365703 /* UserDefaultsEncoded.swift */; };
+		74DA3CC92486981000365703 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA3CC82486981000365703 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		74DA3CAE24868B2400365703 /* CarParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DA3CB124868B2400365703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74DA3CB324868B2400365703 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74DA3CB524868B2400365703 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74DA3CB524868B2400365703 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		74DA3CB824868B2400365703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74DA3CBA24868B2800365703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74DA3CBD24868B2800365703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74DA3CBF24868B2800365703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DA3CC5248697DF00365703 /* UserDefaultsEncoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsEncoded.swift; sourceTree = "<group>"; };
+		74DA3CC82486981000365703 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		74DA3CB024868B2400365703 /* CarParking */ = {
 			isa = PBXGroup;
 			children = (
-				74DA3CB124868B2400365703 /* AppDelegate.swift */,
-				74DA3CB324868B2400365703 /* SceneDelegate.swift */,
-				74DA3CB524868B2400365703 /* ViewController.swift */,
+				74DA3CC82486981000365703 /* Car.swift */,
+				74DA3CC5248697DF00365703 /* UserDefaultsEncoded.swift */,
+				74DA3CB524868B2400365703 /* MapViewController.swift */,
 				74DA3CB724868B2400365703 /* Main.storyboard */,
 				74DA3CBA24868B2800365703 /* Assets.xcassets */,
 				74DA3CBC24868B2800365703 /* LaunchScreen.storyboard */,
 				74DA3CBF24868B2800365703 /* Info.plist */,
+				74DA3CC7248697F300365703 /* delegates */,
 			);
 			path = CarParking;
+			sourceTree = "<group>";
+		};
+		74DA3CC7248697F300365703 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				74DA3CB124868B2400365703 /* AppDelegate.swift */,
+				74DA3CB324868B2400365703 /* SceneDelegate.swift */,
+			);
+			path = delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DA3CB624868B2400365703 /* ViewController.swift in Sources */,
+				74DA3CB624868B2400365703 /* MapViewController.swift in Sources */,
+				74DA3CC6248697DF00365703 /* UserDefaultsEncoded.swift in Sources */,
+				74DA3CC92486981000365703 /* Car.swift in Sources */,
 				74DA3CB224868B2400365703 /* AppDelegate.swift in Sources */,
 				74DA3CB424868B2400365703 /* SceneDelegate.swift in Sources */,
 			);
